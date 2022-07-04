@@ -1,0 +1,245 @@
+/*cabeçalho*/
+body {
+    background-color: #FEFEFE;
+    font-family: 'Montserrat', sans-serif;
+}
+header{
+    background-color: #98FB98;
+    padding: 2%;
+}
+.cabecalho{
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+}
+#logo{
+    width: 8%;
+}
+nav{
+    position: absolute;
+    top: 45%;
+    right: 15px;
+}
+nav li {
+    display: inline;
+    margin: 0 0 0 15px;
+}
+nav a {
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: #24b143;
+    text-decoration: underline;
+}
+/* CSS da pagina principal*/
+main{
+    padding:5% 5% 0 5%;
+    text-align:center;
+    line-height: 1.5;
+}
+main h1{
+    font-size: 2em;
+    text-align:center;
+    padding-bottom: 1%;
+    font-weight: bold;
+}
+
+#banner {
+    width:40%;
+    padding-bottom: 5%;  
+}
+
+section{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 5%;
+    line-height: 1.5;
+}
+
+.divisão{
+    background-color: #98FB98;
+    width: 90%;
+    margin: 0 auto;
+    padding: 1px;
+}
+#banner2{
+    width:40%;
+    padding: 5% 0;
+}
+section h2 {
+    font-size: 2em;    
+    padding: 2% 0;
+    font-weight: bold;
+}
+.mapa {
+    padding: 5% 0;
+}
+section ul{
+    padding-left: 5%;
+    text-align:left;
+    display: inline-block;
+    vertical-align:top;
+    line-height: 1.5;
+}
+
+section ul li:before{
+    content:"✽ " ;
+}
+
+section ul li:nth-child(2n){
+    color:#397e4a;
+    
+}
+/*CSS do rodapé*/
+footer div{
+    background-color: #75FB75;
+    padding: 50px;
+    margin-top: 8%;
+}
+.copiright{
+    font-size: 12px;
+    text-align: center;
+}
+
+/*CSS da página produtos*/
+.produtos {
+    width: 940px;
+    margin: 0 auto;
+    padding: 5%;
+}
+.produtos li {
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    background-color: ;
+    margin: 0 1.5%;
+    padding: 30px 10px;
+    box-sizing: border-box;
+    border: 2px  solid #75FB75;
+    border-radius: 10px;
+}
+.produtos li:hover{
+    border-color: #24b143;
+}
+.produtos h2{
+    font-size: 26px;
+    font-weight: bold;
+    padding: 2% 0;
+}
+.produtos li:hover h2{
+    font-size: 30px;
+}
+
+/*CSS da página de contato*/
+#form {
+    width: 940px;
+    margin: 0 auto;
+    text-align: left;
+}
+#form .formulario1 {
+    margin:5% 0;
+}
+
+#form .formulario1 label, .formulario1 legend{
+    display: block;
+    font-size: 18px;
+    margin: 0 0 1%;
+}
+
+#form .input-padrão{
+    display: block;
+    margin: 0 0 2%;
+    padding: 10px;
+    width: 50%;
+}
+.enviar{
+    width: 40%;
+    padding: 15px 0;
+    background-color: #98FB98;
+    color:#2F4F4F;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+.enviar:hover{
+    background-color: #7ae27a;
+    transform: scale(1.1);
+}
+
+table{
+    margin: 20px 40px;
+}
+
+thead{
+    background: #7ae27a;
+}
+
+td, th{
+    border: 1px solid #7ae27a;
+    padding: 8px 15px;
+}
+
+
+/*CSS Responsivo para Celulares*/
+
+@media screen and (max-width:480px) {
+    .cabecalho, #form{
+        width: auto;
+    }
+    h1{
+        text-align: center;
+    }
+    #logo{
+        width: 45%;
+        padding-bottom: 2%;
+    }
+    nav {
+        position: static;
+        text-align: center;
+    }
+    main h1, section h2{
+        font-size: 1.5em;
+    }
+    #banner, #banner2{
+        width: 70%;
+    }
+
+    .produtos {
+        width: auto;
+    }
+
+    .produtos li {
+        width: 100%;
+        margin: 5% 0;
+    }
+
+    #form .input-padrão, .enviar{
+        width: 75%;
+    }
+    table{
+        margin: 5% 0;
+    }
+}
+@media screen and (min-width:481px, max-width:960px){
+    .cabecalho, #form{
+        width: auto;
+    }
+    h1{
+        text-align: center;
+    }
+    nav {
+        position: static;
+        text-align: center;
+    }
+}
